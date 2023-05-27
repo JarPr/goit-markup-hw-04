@@ -57,6 +57,7 @@ img {
 
 .header {
     border-bottom: 1px solid var(--accent-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -223,6 +224,7 @@ img {
     margin-bottom: 8px;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
 }
 
 .what-we-doing-section {
@@ -314,7 +316,11 @@ img {
 }
 
 .member-soc-link:is(:hover, :focus) {
-    background-color: var(--green-color);
+    background-color: var(--ocean-color);
+}
+
+.member-soc-icon {
+    fill: var(--cloud-color);
 }
 
 .customers-section {
@@ -401,6 +407,7 @@ img {
 
 .portfolio-list-item {
     flex-basis: calc((100% - 48px)/ 3);
+    display: block;
 }
 
 .portfolio-list-item:is(:hover, :focus) {
@@ -423,6 +430,7 @@ img {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-logo-container {
@@ -490,5 +498,9 @@ img {
 }
 
 .footer-soc-link:is(:hover, :focus) {
-    background-color: var(--green-color);
+    background-color: var(--ocean-color);
+}
+
+.footer-soc-icon {
+    fill: var(--cloud-color);
 }
